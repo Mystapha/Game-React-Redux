@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cards{
+    width: 250px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    border:none;
+    border-radius: 25px;
+    box-shadow: 8px -7px 9px -3px rgba(0,0,0,0.57);
+    margin: 30px 20px 30px 20px;
+    background-color: rgb(211, 204, 204);
+    align-items: center;
+    margin-top:100px;
 }
-
-.App-link {
-  color: #61dafb;
+.cards img{
+    width: 250px;
+    height: 230px;
+    border-radius:25px 25px 0 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cards .body-card{
+    text-align: center;
+    margin-top: 20px;
+}
+.cards h3{
+    margin-top: 5px;
+    color:rgb(150, 95, 14);
+}
+.cards p{
+    font-size:10px;
+    font-weight: 400;
+}
+.list-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+.addgame{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
 }
